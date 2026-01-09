@@ -1,0 +1,18 @@
+[package]
+name = "els"
+version = "0.1.0"
+edition = "2021"
+description = "Enhanced directory listing utility"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+libc = "0.2"
+mimetype-detector = "0.3.4"
+pico-args = "0.5"
+
+[dev-dependencies]
+tempfile = "3.14"
+
+[profile.release]
+opt-level = 3
+lto = true
